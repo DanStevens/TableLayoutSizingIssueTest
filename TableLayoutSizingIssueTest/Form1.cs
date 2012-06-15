@@ -15,6 +15,9 @@ namespace TableLayoutSizingIssueTest
 		{
 			InitializeComponent();
 			labelFieldSize.Text = comboField.Size.Width.ToString();
+
+			comboField.Width = 0;
+			labelFieldSize.Width = 0;
 		}
 
 		private void tableLayoutPanel1_SizeChanged(object sender, EventArgs e)
